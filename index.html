@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مواقيت الصلاة — القصر الصغير | أوقات الأذان | Horaires Prière Ksar Sghir</title>
+<meta name="description" content="مواقيت الصلاة اليومية للقصر الصغير — الفجر، الشروق، الظهر، العصر، المغرب، العشاء. تحديث يومي تلقائي.">
+<meta name="keywords" content="مواقيت الصلاة القصر الصغير, أوقات الأذان, الفجر القصر الصغير, ksar sghir priere, horaires prière">
+<link href='https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap' rel='stylesheet'/>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Tajawal',sans-serif; background:#0a0f1a; color:#fff; min-height:100vh; }
+
+header { background:linear-gradient(135deg,#1a1a2e,#16213e); height:60px; display:flex; align-items:center; justify-content:space-between; padding:0 20px; border-bottom:2px solid #c29b62; position:sticky; top:0; z-index:100; }
+.logo { text-decoration:none; }
+.logo-ar { font-size:18px; font-weight:900; color:#c29b62; display:block; }
+.logo-en { font-size:9px; color:#888; letter-spacing:3px; display:block; }
+.back { color:#c29b62; text-decoration:none; font-size:12px; font-weight:600; padding:5px 12px; border:1px solid rgba(194,155,98,0.3); border-radius:20px; }
+
+/* HERO */
+.hero { background:linear-gradient(180deg, rgba(15,25,50,0.95), #0a0f1a); padding:35px 20px 25px; text-align:center; border-bottom:1px solid rgba(194,155,98,0.15); position:relative; overflow:hidden; }
+.hero::before { content:'☪️'; font-size:120px; position:absolute; top:-20px; left:50%; transform:translateX(-50%); opacity:0.04; }
+.hijri-date { color:#c29b62; font-size:14px; margin-bottom:8px; }
+.gregorian-date { color:#aaa; font-size:12px; margin-bottom:15px; }
+.location { font-size:13px; color:#666; }
+.next-prayer-bar { background:rgba(194,155,98,0.1); border:1px solid rgba(194,155,98,0.3); border-radius:12px; padding:12px 20px; margin:15px auto 0; max-width:400px; display:flex; align-items:center; justify-content:space-between; }
+.next-label { font-size:12px; color:#aaa; }
+.next-name { font-size:16px; font-weight:700; color:#c29b62; }
+.next-countdown { font-size:20px; font-weight:900; color:#fff; font-variant-numeric:tabular-nums; }
+
+/* PRAYER TIMES GRID */
+.container { max-width:700px; margin:0 auto; padding:25px 20px; }
+.prayers-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:25px; }
+.prayer-card { background:#16213e; border:1px solid rgba(194,155,98,0.1); border-radius:14px; padding:18px 12px; text-align:center; transition:all 0.3s; position:relative; overflow:hidden; }
+.prayer-card.active { background:linear-gradient(135deg,#1a2a1a,#1f3020); border-color:#c29b62; box-shadow:0 0 20px rgba(194,155,98,0.15); }
+.prayer-card.active::after { content:'▶ الآن'; position:absolute; top:8px; left:8px; font-size:9px; background:#c29b62; color:#000; padding:2px 6px; border-radius:8px; font-weight:700; }
+.prayer-card.passed { opacity:0.5; }
+.prayer-icon { font-size:28px; margin-bottom:8px; }
+.prayer-name-ar { font-size:16px; font-weight:700; color:#fff; }
+.prayer-name-fr { font-size:10px; color:#666; margin-bottom:8px; }
+.prayer-time { font-size:24px; font-weight:900; color:#c29b62; font-variant-numeric:tabular-nums; }
+.prayer-time-12 { font-size:11px; color:#888; margin-top:3px; }
+
+/* SUNRISE SUNSET */
+.sun-card { background:#16213e; border:1px solid rgba(194,155,98,0.1); border-radius:14px; padding:20px; margin-bottom:25px; }
+.sun-title { font-size:14px; font-weight:700; color:#c29b62; margin-bottom:15px; display:flex; align-items:center; gap:8px; }
+.sun-row { display:flex; justify-content:space-around; align-items:center; }
+.sun-item { text-align:center; }
+.sun-icon { font-size:32px; margin-bottom:6px; }
+.sun-label { font-size:11px; color:#888; }
+.sun-time { font-size:20px; font-weight:700; color:#fff; }
+.sun-progress { margin-top:15px; background:rgba(255,255,255,0.05); border-radius:10px; height:6px; overflow:hidden; }
+.sun-progress-bar { height:100%; background:linear-gradient(90deg,#f39c12,#e74c3c); border-radius:10px; transition:width 1s; }
+
+/* QIBLA */
+.qibla-card { background:#16213e; border:1px solid rgba(194,155,98,0.1); border-radius:14px; padding:20px; margin-bottom:25px; text-align:center; }
+.qibla-title { font-size:14px; font-weight:700; color:#c29b62; margin-bottom:15px; }
+.qibla-compass { width:120px; height:120px; margin:0 auto 15px; position:relative; }
+.qibla-compass svg { width:100%; height:100%; }
+.qibla-degree { font-size:28px; font-weight:900; color:#fff; }
+.qibla-desc { font-size:12px; color:#aaa; margin-top:5px; }
+
+/* MONTHLY */
+.monthly-card { background:#16213e; border:1px solid rgba(194,155,98,0.1); border-radius:14px; padding:20px; margin-bottom:25px; }
+.monthly-title { font-size:14px; font-weight:700; color:#c29b62; margin-bottom:15px; }
+.monthly-table { width:100%; border-collapse:collapse; font-size:12px; }
+.monthly-table th { color:#c29b62; padding:8px 5px; text-align:center; border-bottom:1px solid rgba(194,155,98,0.2); }
+.monthly-table td { padding:7px 5px; text-align:center; color:#aaa; border-bottom:1px solid rgba(255,255,255,0.03); }
+.monthly-table tr.today-row td { color:#fff; background:rgba(194,155,98,0.08); }
+.monthly-table tr:hover td { background:rgba(194,155,98,0.04); }
+
+/* LINK */
+.link-banner { background:linear-gradient(135deg,#0d1b2a,#1a3a5c); border-radius:14px; padding:18px 20px; margin-bottom:25px; display:flex; align-items:center; justify-content:space-between; gap:10px; border:1px solid rgba(0,180,216,0.2); }
+.link-banner div p { font-size:12px; color:#aaa; margin-top:3px; }
+.link-btn { background:#00b4d8; color:#fff; font-size:12px; font-weight:700; padding:8px 16px; border-radius:20px; text-decoration:none; white-space:nowrap; }
+
+footer { background:#060c14; padding:15px 20px; text-align:center; border-top:1px solid #16213e; margin-top:10px; }
+.footer-links { display:flex; justify-content:center; gap:15px; flex-wrap:wrap; margin-bottom:8px; }
+.footer-links a { color:#555; text-decoration:none; font-size:12px; }
+.footer-links a:hover { color:#c29b62; }
+.footer-copy { font-size:11px; color:#555; }
+.footer-copy span { color:#c29b62; }
+
+@media(max-width:500px) {
+  .prayers-grid { grid-template-columns:repeat(2,1fr); }
+  .prayer-card:last-child { grid-column:span 2; }
+  .next-prayer-bar { flex-direction:column; gap:5px; text-align:center; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="https://www.ksarsghir.com" class="logo">
+    <span class="logo-ar">القصر الصغير</span>
+    <span class="logo-en">KSAR SGHIR</span>
+  </a>
+  <a href="https://www.ksarsghir.com" class="back">← الرئيسية</a>
+</header>
+
+<div class="hero">
+  <div class="hijri-date" id="hijri-date">⏳ جاري التحميل...</div>
+  <div class="gregorian-date" id="gregorian-date"></div>
+  <div class="location">📍 القصر الصغير — المغرب | 35.6897°N, 5.5597°W</div>
+  <div class="next-prayer-bar">
+    <div><div class="next-label">الصلاة القادمة</div><div class="next-name" id="next-name">—</div></div>
+    <div class="next-countdown" id="countdown">--:--:--</div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- Prayer Cards -->
+  <div class="prayers-grid" id="prayers-grid">
+    <div style="text-align:center;padding:30px;color:#aaa;grid-column:span 3">⏳ جاري تحميل مواقيت الصلاة...</div>
+  </div>
+
+  <!-- Sunrise / Sunset -->
+  <div class="sun-card">
+    <div class="sun-title">🌅 الشروق والغروب</div>
+    <div class="sun-row">
+      <div class="sun-item">
+        <div class="sun-icon">🌄</div>
+        <div class="sun-label">الشروق</div>
+        <div class="sun-time" id="sunrise-time">—</div>
+      </div>
+      <div class="sun-item">
+        <div class="sun-icon">☀️</div>
+        <div class="sun-label">منتصف النهار</div>
+        <div class="sun-time" id="noon-time">—</div>
+      </div>
+      <div class="sun-item">
+        <div class="sun-icon">🌇</div>
+        <div class="sun-label">الغروب</div>
+        <div class="sun-time" id="sunset-time">—</div>
+      </div>
+    </div>
+    <div class="sun-progress"><div class="sun-progress-bar" id="sun-bar" style="width:0%"></div></div>
+  </div>
+
+  <!-- Qibla -->
+  <div class="qibla-card">
+    <div class="qibla-title">🕌 اتجاه القبلة من القصر الصغير</div>
+    <div class="qibla-compass">
+      <svg viewBox="0 0 120 120">
+        <circle cx="60" cy="60" r="58" fill="none" stroke="rgba(194,155,98,0.2)" stroke-width="2"/>
+        <circle cx="60" cy="60" r="45" fill="none" stroke="rgba(194,155,98,0.1)" stroke-width="1"/>
+        <text x="60" y="18" text-anchor="middle" fill="#c29b62" font-size="12" font-family="Tajawal">N</text>
+        <text x="60" y="108" text-anchor="middle" fill="#aaa" font-size="10" font-family="Tajawal">S</text>
+        <text x="108" y="64" text-anchor="middle" fill="#aaa" font-size="10" font-family="Tajawal">E</text>
+        <text x="12" y="64" text-anchor="middle" fill="#aaa" font-size="10" font-family="Tajawal">W</text>
+        <!-- Qibla arrow: ~97° from North for Ksar Sghir -->
+        <line x1="60" y1="60" x2="60" y2="20" stroke="#c29b62" stroke-width="2.5" stroke-linecap="round" transform="rotate(97, 60, 60)"/>
+        <polygon points="60,15 56,25 64,25" fill="#c29b62" transform="rotate(97, 60, 60)"/>
+        <circle cx="60" cy="60" r="4" fill="#c29b62"/>
+      </svg>
+    </div>
+    <div class="qibla-degree">97°</div>
+    <div class="qibla-desc">شرق جنوب شرق — اتجاه مكة المكرمة</div>
+  </div>
+
+  <!-- Link to Meteo -->
+  <div class="link-banner">
+    <div>
+      <strong>🌤️ أحوال الطقس وحالة البحر</strong>
+      <p>نشرة جوية 7 أيام + حالة البحر 24 ساعة</p>
+    </div>
+    <a href="https://meteo.ksarsghir.com" class="link-btn">الطقس ←</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://www.ksarsghir.com">الرئيسية</a>
+    <a href="https://tourism.ksarsghir.com">السياحة</a>
+    <a href="https://meteo.ksarsghir.com">الطقس</a>
+    <a href="https://gallery.ksarsghir.com">المعرض</a>
+  </div>
+  <div class="footer-copy">© 2026 <span>Ksar Sghir</span> • Bilal El Hichou</div>
+</footer>
+
+<script>
+var LAT = 35.6897, LON = -5.5597;
+
+var PRAYERS = [
+  { key:'Fajr',    ar:'الفجر',   fr:'Fajr',    icon:'🌙' },
+  { key:'Sunrise', ar:'الشروق',  fr:'Sunrise', icon:'🌄' },
+  { key:'Dhuhr',   ar:'الظهر',   fr:'Dhohr',   icon:'☀️' },
+  { key:'Asr',     ar:'العصر',   fr:'Asr',     icon:'🌤️' },
+  { key:'Maghrib', ar:'المغرب',  fr:'Maghrib', icon:'🌅' },
+  { key:'Isha',    ar:'العشاء',  fr:'Icha',    icon:'⭐' }
+];
+
+var prayerTimes = {};
+var nextPrayerKey = '';
+var countdownInterval;
+
+function pad(n){ return n.toString().padStart(2,'0'); }
+
+function to12h(t) {
+  var parts = t.split(':');
+  var h = parseInt(parts[0]), m = parts[1];
+  var ampm = h >= 12 ? 'م' : 'ص';
+  h = h % 12 || 12;
+  return h + ':' + m + ' ' + ampm;
+}
+
+function timeToMinutes(t) {
+  var p = t.split(':');
+  return parseInt(p[0]) * 60 + parseInt(p[1]);
+}
+
+function setDates() {
+  var now = new Date();
+  var greg = now.toLocaleDateString('ar-MA', { weekday:'long', year:'numeric', month:'long', day:'numeric' });
+  document.getElementById('gregorian-date').textContent = greg;
+
+  // Hijri date via API
+  fetch('https://api.aladhan.com/v1/gToH?date=' + (now.getDate()) + '-' + (now.getMonth()+1) + '-' + now.getFullYear())
+    .then(function(r){ return r.json(); })
+    .then(function(d) {
+      var h = d.data.hijri;
+      document.getElementById('hijri-date').textContent = h.day + ' ' + h.month.ar + ' ' + h.year + ' هـ';
+    }).catch(function(){
+      document.getElementById('hijri-date').textContent = '📅 ' + now.toLocaleDateString('ar-MA');
+    });
+}
+
+function loadPrayers() {
+  var today = new Date();
+  var dateStr = pad(today.getDate()) + '-' + pad(today.getMonth()+1) + '-' + today.getFullYear();
+  var url = 'https://api.aladhan.com/v1/timings/' + dateStr + '?latitude=' + LAT + '&longitude=' + LON + '&method=21';
+
+  fetch(url).then(function(r){ return r.json(); }).then(function(d) {
+    var timings = d.data.timings;
+    prayerTimes = timings;
+
+    // Sunrise/Sunset
+    document.getElementById('sunrise-time').textContent = timings.Sunrise;
+    document.getElementById('noon-time').textContent = timings.Dhuhr;
+    document.getElementById('sunset-time').textContent = timings.Maghrib;
+
+    // Sun progress bar
+    var now = new Date();
+    var nowMins = now.getHours() * 60 + now.getMinutes();
+    var riseMins = timeToMinutes(timings.Sunrise);
+    var setMins = timeToMinutes(timings.Maghrib);
+    var progress = Math.max(0, Math.min(100, (nowMins - riseMins) / (setMins - riseMins) * 100));
+    document.getElementById('sun-bar').style.width = progress + '%';
+
+    // Find next prayer
+    var nowMins2 = now.getHours() * 60 + now.getMinutes();
+    var nextKey = 'Fajr';
+    var nextMins = 9999;
+    PRAYERS.forEach(function(p) {
+      if (p.key === 'Sunrise') return;
+      var pm = timeToMinutes(timings[p.key]);
+      if (pm > nowMins2 && pm < nextMins) {
+        nextMins = pm;
+        nextKey = p.key;
+      }
+    });
+    nextPrayerKey = nextKey;
+
+    var nextP = PRAYERS.find(function(p){ return p.key === nextKey; });
+    document.getElementById('next-name').textContent = nextP ? nextP.ar : 'الفجر';
+
+    // Render prayer cards
+    var html = '';
+    PRAYERS.forEach(function(p) {
+      var time = timings[p.key];
+      var pmins = timeToMinutes(time);
+      var isActive = p.key === nextKey;
+      var isPassed = pmins < nowMins2 && p.key !== nextKey;
+      var cls = isActive ? 'active' : (isPassed ? 'passed' : '');
+      html +=
+        '<div class="prayer-card ' + cls + '">' +
+          '<div class="prayer-icon">' + p.icon + '</div>' +
+          '<div class="prayer-name-ar">' + p.ar + '</div>' +
+          '<div class="prayer-name-fr">' + p.fr + '</div>' +
+          '<div class="prayer-time">' + time + '</div>' +
+          '<div class="prayer-time-12">' + to12h(time) + '</div>' +
+        '</div>';
+    });
+    document.getElementById('prayers-grid').innerHTML = html;
+
+    startCountdown(timings[nextKey]);
+
+  }).catch(function() {
+    document.getElementById('prayers-grid').innerHTML = '<div style="text-align:center;padding:30px;color:#e74c3c;grid-column:span 3">⚠️ تعذر تحميل مواقيت الصلاة</div>';
+  });
+}
+
+function startCountdown(targetTime) {
+  if (countdownInterval) clearInterval(countdownInterval);
+  countdownInterval = setInterval(function() {
+    var now = new Date();
+    var target = new Date();
+    var parts = targetTime.split(':');
+    target.setHours(parseInt(parts[0]), parseInt(parts[1]), 0, 0);
+    if (target < now) target.setDate(target.getDate() + 1);
+    var diff = Math.max(0, target - now);
+    var h = Math.floor(diff / 3600000);
+    var m = Math.floor((diff % 3600000) / 60000);
+    var s = Math.floor((diff % 60000) / 1000);
+    document.getElementById('countdown').textContent = pad(h) + ':' + pad(m) + ':' + pad(s);
+  }, 1000);
+}
+
+// Init
+setDates();
+loadPrayers();
+
+// Refresh at midnight
+var now = new Date();
+var msToMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate()+1) - now;
+setTimeout(function() {
+  setDates();
+  loadPrayers();
+  setInterval(loadPrayers, 24*60*60*1000);
+}, msToMidnight);
+</script>
+</body>
+</html>
