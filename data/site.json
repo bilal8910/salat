@@ -1,0 +1,773 @@
+{
+ "version": "mvqzgw6s",
+ "baseUrl": "https://www.ksarsghir.com",
+ "owner": "Bilal El Hichou",
+ "name": {
+  "ar": "القصر الصغير",
+  "fr": "Ksar Sghir",
+  "en": "Ksar Sghir",
+  "es": "Alcazarseguer"
+ },
+ "tagline": {
+  "ar": "دليلك السياحي لشمال المغرب على مضيق جبل طارق",
+  "fr": "Le guide touristique du nord du Maroc, sur le détroit de Gibraltar",
+  "en": "Your travel guide to northern Morocco on the Strait of Gibraltar",
+  "es": "Tu guía turística del norte de Marruecos, en el estrecho de Gibraltar"
+ },
+ "hero": {
+  "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyF6zy_A4LJ2L-xiH04Zd6XJEDMXIaOmyzWtN3vaFdByi2ysaLnHUcv4jYzuv5UqLPoM44_VLDfwr4MWEGATxl4QX7J7Ad0Z9bLL6kqB5lHnCQOf3EaC_snAy2TJCCt14okvSQDDPb0XvpNRZ6Gmhq6VIIHpESdyZ3P2uaZaSIm7PfxqtSHWL4-TUFwdU/s1600/8510.jpg",
+  "title": {
+   "ar": "القصر الصغير",
+   "fr": "Ksar Sghir",
+   "en": "Ksar Sghir",
+   "es": "Alcazarseguer"
+  },
+  "subtitle": {
+   "ar": "شواطئ، موانئ وتاريخ على الضفة الجنوبية لمضيق جبل طارق، بعدسة بلال الهيشو.",
+   "fr": "Plages, ports et histoire sur la rive sud du détroit de Gibraltar, par l’objectif de Bilal El Hichou.",
+   "en": "Beaches, ports and history on the southern shore of the Strait of Gibraltar, through the lens of Bilal El Hichou.",
+   "es": "Playas, puertos e historia en la orilla sur del estrecho de Gibraltar, con la mirada de Bilal El Hichou."
+  },
+  "cta": {
+   "ar": "اكتشف الوجهات",
+   "fr": "Découvrir les destinations",
+   "en": "Explore destinations",
+   "es": "Descubrir destinos"
+  },
+  "seoTitle": {
+   "ar": "القصر الصغير — دليل سياحي: شواطئ، موانئ وتاريخ | Ksar Sghir",
+   "fr": "Ksar Sghir (Ksar es-Seghir) — Guide touristique, plages et histoire | Maroc",
+   "en": "Ksar Sghir, Morocco — Travel guide to beaches, ports and history",
+   "es": "Alcazarseguer (Ksar Sghir) — Guía turística: playas e historia | Marruecos"
+  },
+  "description": {
+   "ar": "دليل القصر الصغير السياحي: أجمل الشواطئ، ميناء طنجة المتوسط، بليونش والموقع الأثري، بأربع لغات. صور ومعلومات عملية من ابن المنطقة.",
+   "fr": "Guide de Ksar Sghir (Ksar es-Seghir) : plus belles plages, Tanger Med, Belyounech et site archéologique. Infos pratiques et photos d’un habitant.",
+   "en": "Ksar Sghir travel guide: the best beaches, Tanger Med port, Belyounech and the archaeological site, with photos and practical tips from a local.",
+   "es": "Guía de Alcazarseguer (Ksar Sghir): las mejores playas, Tánger Med, Belyounech y el yacimiento arqueológico. Fotos y consejos de un local."
+  },
+  "images": [
+   "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyF6zy_A4LJ2L-xiH04Zd6XJEDMXIaOmyzWtN3vaFdByi2ysaLnHUcv4jYzuv5UqLPoM44_VLDfwr4MWEGATxl4QX7J7Ad0Z9bLL6kqB5lHnCQOf3EaC_snAy2TJCCt14okvSQDDPb0XvpNRZ6Gmhq6VIIHpESdyZ3P2uaZaSIm7PfxqtSHWL4-TUFwdU/s1600/8510.jpg",
+   "assets/img/port-diki-muk6q6yr.webp",
+   "assets/img/favicon-mujqt9vq.webp",
+   "assets/img/tanger-med-muk681ck.webp",
+   "assets/img/20073-mujr4ueq.webp"
+  ],
+  "quick": [
+   {
+    "icon": "🌊",
+    "label": {
+     "ar": "البحر اليوم",
+     "fr": "La mer aujourd’hui",
+     "en": "Sea today",
+     "es": "El mar hoy"
+    },
+    "url": "mer/",
+    "i18n": true
+   },
+   {
+    "icon": "⛴️",
+    "label": {
+     "ar": "مواعيد البواخر",
+     "fr": "Horaires des ferries",
+     "en": "Ferry times",
+     "es": "Horarios de ferris"
+    },
+    "url": "guide/bateaux-tanger-med/",
+    "i18n": true
+   },
+   {
+    "icon": "📞",
+    "label": {
+     "ar": "الأرقام المهمة",
+     "fr": "Numéros utiles",
+     "en": "Useful numbers",
+     "es": "Teléfonos útiles"
+    },
+    "url": "numeros-utiles/",
+    "i18n": true
+   }
+  ]
+ },
+ "intro": {
+  "ar": "<h2>مرحباً بك في القصر الصغير</h2><p><strong>القصر الصغير</strong> بلدة ساحلية في إقليم الفحص أنجرة، على بعد حوالي 35 كيلومتراً شرق طنجة، مطلة مباشرة على مضيق جبل طارق. من شاطئها ترى الساحل الإسباني في الأيام الصافية، والبواخر تعبر المضيق طوال اليوم.</p><p>حولها شواطئ لكل ذوق: <a href=\"~/tourisme/dalia/\">الدالية</a> باللواء الأزرق، و<a href=\"~/tourisme/sidi-kankouch-1/\">سيدي قنقوش</a> بخدماته وأنشطته، وخلجان هادئة للعائلات مثل <a href=\"~/tourisme/dahdaha/\">الدهداه</a> و<a href=\"~/tourisme/zrara/\">زرارع</a> و<a href=\"~/tourisme/oued-marsa/\">واد المرسى</a>. وعلى بعد دقائق <a href=\"~/tourisme/tanger-med/\">ميناء طنجة المتوسط</a>، و<a href=\"~/tourisme/site-archeologique/\">الموقع الأثري</a> في قلب البلدة، وقرية <a href=\"~/tourisme/belyounech/\">بليونش</a> تحت جبل موسى.</p><p>في هذا الدليل نجمع لك ما تحتاجه لزيارة القصر الصغير: وصف كل شاطئ وميناء وموقع تاريخي، وحالة البحر يومياً، ومواعيد البواخر، والأرقام المهمة، بصور ومعلومات من ابن المنطقة.</p>",
+  "fr": "<h2>Bienvenue à Ksar Sghir</h2><p><strong>Ksar Sghir</strong> (aussi écrit Ksar es-Seghir ou Ksar Seghir) est une petite ville côtière de la province de Fahs-Anjra, à environ 35 km à l’est de Tanger, face au détroit de Gibraltar. Par temps clair, on voit la côte espagnole depuis sa plage, et les navires traversent le détroit toute la journée.</p><p>Autour, des plages pour tous les goûts : <a href=\"~/tourisme/dalia/\">Dalia</a> et son Pavillon Bleu, <a href=\"~/tourisme/sidi-kankouch-1/\">Sidi Kankouch</a> avec ses services et activités, et des criques calmes pour les familles comme <a href=\"~/tourisme/dahdaha/\">Dahdaha</a>, <a href=\"~/tourisme/zrara/\">Zrara</a> ou <a href=\"~/tourisme/oued-marsa/\">Oued Marsa</a>. À quelques minutes : <a href=\"~/tourisme/tanger-med/\">le port Tanger Med</a>, <a href=\"~/tourisme/site-archeologique/\">le site archéologique</a> au cœur de la ville et le village de <a href=\"~/tourisme/belyounech/\">Belyounech</a> au pied du Jebel Moussa.</p><p>Ce guide réunit l’essentiel pour visiter Ksar Sghir : chaque plage, port et site historique, l’état de la mer au jour le jour, les horaires des ferries et les numéros utiles, avec les photos et les conseils d’un habitant.</p>",
+  "en": "<h2>Welcome to Ksar Sghir</h2><p><strong>Ksar Sghir</strong> (also spelled Ksar es-Seghir or Ksar Seghir) is a small coastal town in Fahs-Anjra province, about 35 km east of Tangier, right on the Strait of Gibraltar. On clear days you can see the Spanish coast from its beach, and ships cross the Strait all day long.</p><p>Around it are beaches for every taste: Blue Flag <a href=\"~/tourisme/dalia/\">Dalia</a>, <a href=\"~/tourisme/sidi-kankouch-1/\">Sidi Kankouch</a> with its services and activities, and calm family coves such as <a href=\"~/tourisme/dahdaha/\">Dahdaha</a>, <a href=\"~/tourisme/zrara/\">Zrara</a> and <a href=\"~/tourisme/oued-marsa/\">Oued Marsa</a>. A few minutes away are <a href=\"~/tourisme/tanger-med/\">Tanger Med port</a>, <a href=\"~/tourisme/site-archeologique/\">the archaeological site</a> in the heart of town and the village of <a href=\"~/tourisme/belyounech/\">Belyounech</a> below Jebel Musa.</p><p>This guide covers what you need to visit Ksar Sghir, Morocco: every beach, port and historic site, daily sea conditions, ferry times and useful numbers, with photos and tips from someone who lives here.</p>",
+  "es": "<h2>Bienvenido a Alcazarseguer</h2><p><strong>Alcazarseguer</strong> (Ksar Sghir o Ksar es-Seghir) es un pequeño pueblo costero de la provincia de Fahs-Anjra, a unos 35 km al este de Tánger, frente al estrecho de Gibraltar. En días despejados se ve la costa española desde su playa, y los barcos cruzan el Estrecho todo el día.</p><p>Alrededor hay playas para todos los gustos: <a href=\"~/tourisme/dalia/\">Dalia</a>, con Bandera Azul; <a href=\"~/tourisme/sidi-kankouch-1/\">Sidi Kankouch</a>, con servicios y actividades; y calas tranquilas para familias como <a href=\"~/tourisme/dahdaha/\">Dahdaha</a>, <a href=\"~/tourisme/zrara/\">Zrara</a> u <a href=\"~/tourisme/oued-marsa/\">Oued Marsa</a>. A pocos minutos están <a href=\"~/tourisme/tanger-med/\">el puerto de Tánger Med</a>, <a href=\"~/tourisme/site-archeologique/\">el yacimiento arqueológico</a> en el centro del pueblo y el pueblo de <a href=\"~/tourisme/belyounech/\">Belyounech</a>, al pie del Yebel Musa.</p><p>Esta guía reúne lo necesario para visitar Alcazarseguer: cada playa, puerto y lugar histórico, el estado del mar día a día, los horarios de ferris y los teléfonos útiles, con fotos y consejos de un vecino.</p>"
+ },
+ "featured": "plage",
+ "categories": [
+  {
+   "id": "beach",
+   "icon": "🏖️",
+   "name": {
+    "ar": "شواطئ",
+    "fr": "Plages",
+    "en": "Beaches",
+    "es": "Playas"
+   }
+  },
+  {
+   "id": "port",
+   "icon": "⚓",
+   "name": {
+    "ar": "موانئ",
+    "fr": "Ports",
+    "en": "Ports",
+    "es": "Puertos"
+   }
+  },
+  {
+   "id": "nature",
+   "icon": "🌿",
+   "name": {
+    "ar": "طبيعة",
+    "fr": "Nature",
+    "en": "Nature",
+    "es": "Naturaleza"
+   }
+  },
+  {
+   "id": "history",
+   "icon": "🏛️",
+   "name": {
+    "ar": "تاريخ وآثار",
+    "fr": "Histoire",
+    "en": "History",
+    "es": "Historia"
+   }
+  }
+ ],
+ "stats": [
+  {
+   "value": "77K",
+   "label": {
+    "ar": "متابع على Facebook",
+    "fr": "abonnés Facebook",
+    "en": "Facebook followers",
+    "es": "seguidores en Facebook"
+   }
+  },
+  {
+   "value": "16+",
+   "label": {
+    "ar": "وجهة سياحية",
+    "fr": "destinations",
+    "en": "destinations",
+    "es": "destinos"
+   }
+  },
+  {
+   "value": "4",
+   "label": {
+    "ar": "لغات",
+    "fr": "langues",
+    "en": "languages",
+    "es": "idiomas"
+   }
+  }
+ ],
+ "menu": [
+  {
+   "label": {
+    "ar": "الرئيسية",
+    "fr": "Accueil",
+    "en": "Home",
+    "es": "Inicio"
+   },
+   "url": "",
+   "i18n": true
+  },
+  {
+   "label": {
+    "ar": "السياحة",
+    "fr": "Tourisme",
+    "en": "Tourism",
+    "es": "Turismo"
+   },
+   "url": "tourisme/",
+   "i18n": true
+  },
+  {
+   "label": {
+    "ar": "الدليل",
+    "fr": "Guide",
+    "en": "Guide",
+    "es": "Guía"
+   },
+   "url": "guide/",
+   "i18n": true
+  },
+  {
+   "label": {
+    "ar": "الإقامة",
+    "fr": "Hébergement",
+    "en": "Stay",
+    "es": "Alojamiento"
+   },
+   "url": "hebergement/",
+   "i18n": true
+  },
+  {
+   "label": {
+    "ar": "المعرض",
+    "fr": "Galerie",
+    "en": "Gallery",
+    "es": "Galería"
+   },
+   "url": "gallery/",
+   "i18n": true
+  },
+  {
+   "label": {
+    "ar": "الطقس",
+    "fr": "Météo",
+    "en": "Weather",
+    "es": "Tiempo"
+   },
+   "url": "meteo/",
+   "i18n": true
+  },
+  {
+   "label": {
+    "ar": "الصلاة",
+    "fr": "Prière",
+    "en": "Prayer",
+    "es": "Oración"
+   },
+   "url": "salat/",
+   "i18n": true
+  },
+  {
+   "label": {
+    "ar": "الأرقام المهمة",
+    "fr": "Numéros utiles",
+    "en": "Useful numbers",
+    "es": "Teléfonos útiles"
+   },
+   "url": "numeros-utiles/",
+   "i18n": true
+  },
+  {
+   "label": {
+    "ar": "أعلن معنا",
+    "fr": "Publicité",
+    "en": "Advertise",
+    "es": "Publicidad"
+   },
+   "url": "advertise/",
+   "i18n": true
+  }
+ ],
+ "footer": [
+  {
+   "title": {
+    "ar": "السياحة",
+    "fr": "Tourisme",
+    "en": "Tourism",
+    "es": "Turismo"
+   },
+   "links": [
+    {
+     "label": {
+      "ar": "شاطئ القصر الصغير",
+      "fr": "Plage Ksar Sghir",
+      "en": "Ksar Sghir Beach",
+      "es": "Playa Ksar Sghir"
+     },
+     "url": "tourisme/plage/",
+     "i18n": true
+    },
+    {
+     "label": {
+      "ar": "شاطئ الدالية",
+      "fr": "Plage Dalia",
+      "en": "Dalia Beach",
+      "es": "Playa Dalia"
+     },
+     "url": "tourisme/dalia/",
+     "i18n": true
+    },
+    {
+     "label": {
+      "ar": "قرية بليونش",
+      "fr": "Belyounech",
+      "en": "Belyounech",
+      "es": "Belyounech"
+     },
+     "url": "tourisme/belyounech/",
+     "i18n": true
+    },
+    {
+     "label": {
+      "ar": "كل الوجهات",
+      "fr": "Toutes les destinations",
+      "en": "All destinations",
+      "es": "Todos los destinos"
+     },
+     "url": "tourisme/",
+     "i18n": true
+    }
+   ]
+  },
+  {
+   "title": {
+    "ar": "خدمات",
+    "fr": "Services",
+    "en": "Services",
+    "es": "Servicios"
+   },
+   "links": [
+    {
+     "label": {
+      "ar": "البحر اليوم",
+      "fr": "La mer aujourd’hui",
+      "en": "Sea today",
+      "es": "El mar hoy"
+     },
+     "url": "mer/",
+     "i18n": true
+    },
+    {
+     "label": {
+      "ar": "مواعيد البواخر",
+      "fr": "Horaires des ferries",
+      "en": "Ferry times",
+      "es": "Horarios de ferris"
+     },
+     "url": "guide/bateaux-tanger-med/",
+     "i18n": true
+    },
+    {
+     "label": {
+      "ar": "الإقامة",
+      "fr": "Hébergement",
+      "en": "Where to stay",
+      "es": "Alojamiento"
+     },
+     "url": "hebergement/",
+     "i18n": true
+    },
+    {
+     "label": {
+      "ar": "أرقام مهمة",
+      "fr": "Numéros utiles",
+      "en": "Useful numbers",
+      "es": "Teléfonos útiles"
+     },
+     "url": "numeros-utiles/",
+     "i18n": true
+    }
+   ]
+  },
+  {
+   "title": {
+    "ar": "الموقع",
+    "fr": "Le site",
+    "en": "About",
+    "es": "El sitio"
+   },
+   "links": [
+    {
+     "label": {
+      "ar": "من أنا",
+      "fr": "À propos",
+      "en": "About",
+      "es": "Sobre mí"
+     },
+     "url": "about/",
+     "i18n": true
+    },
+    {
+     "label": {
+      "ar": "اتصل بنا",
+      "fr": "Contact",
+      "en": "Contact",
+      "es": "Contacto"
+     },
+     "url": "contact/",
+     "i18n": true
+    },
+    {
+     "label": {
+      "ar": "الخصوصية",
+      "fr": "Confidentialité",
+      "en": "Privacy",
+      "es": "Privacidad"
+     },
+     "url": "privacy/",
+     "i18n": true
+    },
+    {
+     "label": {
+      "ar": "الشروط",
+      "fr": "Conditions",
+      "en": "Terms",
+      "es": "Condiciones"
+     },
+     "url": "terms/",
+     "i18n": true
+    }
+   ]
+  }
+ ],
+ "social": [
+  {
+   "name": "Facebook — ksarsghircity",
+   "url": "https://www.facebook.com/ksarsghircity"
+  },
+  {
+   "name": "Facebook — Ksar Sghir Lens",
+   "url": "https://www.facebook.com/KsarSghirLens"
+  },
+  {
+   "name": "WhatsApp",
+   "url": "https://wa.me/212708053745"
+  },
+  {
+   "name": "",
+   "url": ""
+  }
+ ],
+ "tourismPage": {},
+ "ads": {
+  "top": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8985281135812571\"\n     crossorigin=\"anonymous\"></script>",
+  "bottom": ""
+ },
+ "verification": {
+  "google": ""
+ },
+ "analytics": "",
+ "extraUrls": [],
+ "live": {
+  "weather": true,
+  "sea": true,
+  "prayer": true,
+  "lat": 35.8426,
+  "lng": -5.5596,
+  "seaLat": 35.87,
+  "seaLng": -5.55,
+  "method": 21,
+  "tune": "",
+  "weatherUrl": "meteo/",
+  "seaUrl": "mer/",
+  "prayerUrl": "salat/"
+ },
+ "homeGallery": {
+  "title": {
+   "ar": "معرض الصور",
+   "fr": "Galerie photos",
+   "en": "Photo gallery",
+   "es": "Galería de fotos"
+  },
+  "subtitle": {
+   "ar": "لقطات من عدسة بلال الهيشو",
+   "fr": "Photos de Bilal El Hichou",
+   "en": "Photos by Bilal El Hichou",
+   "es": "Fotos de Bilal El Hichou"
+  },
+  "cta": {
+   "ar": "عرض كل الصور",
+   "fr": "Voir toutes les photos",
+   "en": "See all photos",
+   "es": "Ver todas las fotos"
+  },
+  "url": "gallery/",
+  "images": [
+   {
+    "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjETG-3niCoeG0AcNV2SdGpI3ApVHoLYV-F2d3OgpqvSrI4lMF32QLj_dKeEOkOcOnwJ6OO0BjAuem3ss-jk0CJUadghleD4OeVXyI2I84F31shW3_X6Ul3t6L1g7DBx3KXvpl0kBphfDFYqr2bryoUeYT1IAM_brbGgptbLLR6XVi58b7NjsMX5cvVrFY/s1200/4353.jpg",
+    "alt": {
+     "ar": "ميناء طنجة المتوسط",
+     "fr": "Port Tanger Med",
+     "en": "Tanger Med port",
+     "es": "Puerto Tánger Med"
+    }
+   },
+   {
+    "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyF6zy_A4LJ2L-xiH04Zd6XJEDMXIaOmyzWtN3vaFdByi2ysaLnHUcv4jYzuv5UqLPoM44_VLDfwr4MWEGATxl4QX7J7Ad0Z9bLL6kqB5lHnCQOf3EaC_snAy2TJCCt14okvSQDDPb0XvpNRZ6Gmhq6VIIHpESdyZ3P2uaZaSIm7PfxqtSHWL4-TUFwdU/s1200/8510.jpg",
+    "alt": {
+     "ar": "غروب الشمس على شاطئ القصر الصغير",
+     "fr": "Coucher de soleil à Ksar Sghir",
+     "en": "Sunset over Ksar Sghir beach",
+     "es": "Atardecer en Alcazarseguer"
+    }
+   },
+   {
+    "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHQolv6RmyUqkJCdSImtvNinU325jN_uTkEdP2K3Zn1y1zSmnlHdtGk7rMCKJFh5MGbspcJ_5pHzLRCriLKIq3DmTI0Pl10-1NCfQLSHrPuheemplMGTpTmmPLjHuia3FA0XTRpXU1NAow2H93nBBEVegH8tT5Y_zbrCmKwvWOHI040KHDdzidEpbgnOI/s1200/3385.jpg",
+    "alt": {
+     "ar": "شاطئ القصر الصغير",
+     "fr": "Plage de Ksar Sghir",
+     "en": "Ksar Sghir beach",
+     "es": "Playa de Alcazarseguer"
+    }
+   },
+   {
+    "src": "assets/img/belyounech-muk655s9.webp",
+    "alt": {}
+   },
+   {
+    "src": "assets/img/port-diki-muk6q6yr.webp",
+    "alt": {}
+   },
+   {
+    "src": "assets/img/zrara-muk6usi1.webp",
+    "alt": {}
+   }
+  ],
+  "i18n": true
+ },
+ "servicesBlock": {
+  "title": {
+   "ar": "خدماتنا",
+   "fr": "Nos services",
+   "en": "Our services",
+   "es": "Nuestros servicios"
+  }
+ },
+ "services": [
+  {
+   "icon": "🌤️",
+   "title": {
+    "ar": "الطقس والبحر",
+    "fr": "Météo et mer",
+    "en": "Weather & sea",
+    "es": "Tiempo y mar"
+   },
+   "text": {
+    "ar": "نشرة جوية 7 أيام + حالة البحر",
+    "fr": "Prévisions 7 jours + état de la mer",
+    "en": "7-day forecast + sea conditions",
+    "es": "Previsión 7 días + estado del mar"
+   },
+   "url": "meteo/",
+   "i18n": true
+  },
+  {
+   "icon": "🕌",
+   "title": {
+    "ar": "مواقيت الصلاة",
+    "fr": "Horaires de prière",
+    "en": "Prayer times",
+    "es": "Horarios de oración"
+   },
+   "text": {
+    "ar": "أوقات الأذان يومياً + اتجاه القبلة",
+    "fr": "Horaires quotidiens + direction de la Qibla",
+    "en": "Daily times + Qibla direction",
+    "es": "Horarios diarios + dirección de la Qibla"
+   },
+   "url": "salat/",
+   "i18n": true
+  },
+  {
+   "icon": "📢",
+   "title": {
+    "ar": "أعلن معنا",
+    "fr": "Publicité",
+    "en": "Advertise",
+    "es": "Publicidad"
+   },
+   "text": {
+    "ar": "إعلانك يصل إلى 77K متابع في المنطقة",
+    "fr": "Touchez 77K abonnés dans la région",
+    "en": "Reach 77K followers in the region",
+    "es": "Llega a 77K seguidores en la región"
+   },
+   "url": "advertise/",
+   "i18n": true
+  }
+ ],
+ "rating": {
+  "enabled": true,
+  "google": "",
+  "facebook": "https://www.facebook.com/ksarsghircity/reviews",
+  "title": {},
+  "text": {}
+ },
+ "ticker": {
+  "enabled": false,
+  "speed": "normal",
+  "label": {
+   "ar": "جديد",
+   "fr": "Nouveau",
+   "en": "New",
+   "es": "Nuevo"
+  },
+  "items": [
+   {
+    "text": {
+     "ar": "مرحباً بكم فالدليل السياحي للقصر الصغير، بأربع لغات",
+     "fr": "Bienvenue sur le guide touristique de Ksar Sghir, en quatre langues",
+     "en": "Welcome to the Ksar Sghir travel guide, in four languages",
+     "es": "Bienvenidos a la guía turística de Alcazarseguer, en cuatro idiomas"
+    },
+    "url": "",
+    "i18n": false
+   },
+   {
+    "text": {
+     "ar": "اكتشف 16 وجهة سياحية: شواطئ، موانئ وتاريخ",
+     "fr": "Découvrez 16 destinations : plages, ports et histoire",
+     "en": "Discover 16 destinations: beaches, ports and history",
+     "es": "Descubre 16 destinos: playas, puertos e historia"
+    },
+    "url": "tourisme/",
+    "i18n": false
+   },
+   {
+    "text": {
+     "ar": "ملاحظة: الموقع حالياً في مرحلة التجريب (الإصدار التجريبي). انتظرونا قريباً في حلة جديدة وبميزات جديدة بإذن الله!",
+     "fr": "Note : Le site est actuellement en version bêta (test). Restez à l'affût, une nouvelle version riche en nouveautés arrive très bientôt inchallah !",
+     "en": "Note: The website is currently in its test phase (Beta version). Stay tuned for a brand-new design and exciting updates coming soon, Insha'Allah!",
+     "es": "Nota: El sitio web se encuentra actualmente en fase de prueba (versión Beta). ¡Permanezcan atentos, muy pronto volveremos con un nuevo diseño y grandes novedades si Dios quiere!"
+    },
+    "url": "",
+    "i18n": true
+   }
+  ],
+  "autoNews": false
+ },
+ "topbar": {
+  "social": true
+ },
+ "theme": {
+  "primary": "",
+  "accent": "",
+  "ink": "",
+  "mode": "",
+  "font": "",
+  "display": "",
+  "radius": "",
+  "customCss": ".prose p, .intro p, .lead, .card-big p { text-align: justify; text-justify: inter-word; }"
+ },
+ "homeSections": {
+  "live": true,
+  "intro": true,
+  "video": true,
+  "featured": true,
+  "latest": true,
+  "gallery": true,
+  "services": true,
+  "categories": true,
+  "stats": true,
+  "rating": true,
+  "guide": true,
+  "news": true
+ },
+ "homeVideo": {
+  "url": "",
+  "title": {},
+  "text": {}
+ },
+ "favicon": "",
+ "migrations": [
+  "v7",
+  "v8",
+  "v9",
+  "v10",
+  "v11",
+  "v12",
+  "v13",
+  "v14",
+  "v15",
+  "v16"
+ ],
+ "whatsapp": {
+  "float": true,
+  "number": "",
+  "message": {
+   "ar": "السلام عليكم، جيت من موقع القصر الصغير",
+   "fr": "Bonjour, je viens du site Ksar Sghir",
+   "en": "Hello, I found you on the Ksar Sghir website",
+   "es": "Hola, vengo de la web de Alcazarseguer"
+  }
+ },
+ "adPackages": {
+  "show": false,
+  "title": {},
+  "items": []
+ },
+ "pages": {
+  "guide": true,
+  "news": true,
+  "hebergement": true,
+  "numeros": true,
+  "mer": true
+ },
+ "sections": {
+  "guide": {},
+  "news": {
+   "days": 30,
+   "always": false
+  }
+ },
+ "watermark": {
+  "on": true,
+  "text": "© Bilal El Hichou · ksarsghir.com",
+  "done": [
+   "assets/img/zrara-muk6usi1.webp",
+   "assets/img/zahara-hatba-muk6fgrf.webp",
+   "assets/img/tanger-med-muk681ck.webp",
+   "assets/img/site-archeologique-muk6brkb.webp",
+   "assets/img/sidi-kankouch-2-muk6y0wm.webp",
+   "assets/img/sidi-kankouch-1-muk6zfyn.webp",
+   "assets/img/port-peche-muk6dkbe.webp",
+   "assets/img/port-diki-muk6q6yr.webp",
+   "assets/img/oued-marsa-muk6wn7p.webp",
+   "assets/img/oued-alian-muk6t40e.webp",
+   "assets/img/oued-alian-muk6rszm.webp",
+   "assets/img/ghojin-srama-muk6iyas.webp",
+   "assets/img/ghojin-srama-muk6hpgo.webp",
+   "assets/img/ferdiwa-muk6m32t.webp",
+   "assets/img/dalia-muk61o94.webp",
+   "assets/img/dahdaha-muk6o1mk.webp",
+   "assets/img/belyounech-muk655s9.webp",
+   "assets/img/belyounech-muk645jy.webp",
+   "assets/img/20073-mujr4ueq.webp"
+  ],
+  "article": "center",
+  "gallery": "light",
+  "centerText": "www.ksarsghir.com",
+  "centerSub": "© Bilal El Hichou",
+  "done2": [
+   "assets/img/zrara-muk6usi1.webp",
+   "assets/img/zahara-hatba-muk6fgrf.webp",
+   "assets/img/tanger-med-muk681ck.webp",
+   "assets/img/site-archeologique-muk6brkb.webp",
+   "assets/img/sidi-kankouch-2-muk6y0wm.webp",
+   "assets/img/sidi-kankouch-1-muk6zfyn.webp",
+   "assets/img/zrara-muk6usi1.webp",
+   "assets/img/zahara-hatba-muk6fgrf.webp",
+   "assets/img/tanger-med-muk681ck.webp",
+   "assets/img/site-archeologique-muk6brkb.webp",
+   "assets/img/sidi-kankouch-2-muk6y0wm.webp",
+   "assets/img/sidi-kankouch-1-muk6zfyn.webp",
+   "assets/img/ghojin-srama-muk6hpgo.webp",
+   "assets/img/ferdiwa-muk6m32t.webp",
+   "assets/img/dalia-muk61o94.webp",
+   "assets/img/dahdaha-muk6o1mk.webp",
+   "assets/img/belyounech-muk655s9.webp",
+   "assets/img/belyounech-muk645jy.webp",
+   "assets/img/ghojin-srama-muk6hpgo.webp",
+   "assets/img/ferdiwa-muk6m32t.webp",
+   "assets/img/dalia-muk61o94.webp",
+   "assets/img/dahdaha-muk6o1mk.webp",
+   "assets/img/belyounech-muk655s9.webp",
+   "assets/img/belyounech-muk645jy.webp",
+   "assets/img/20073-mujr4ueq.webp",
+   "assets/img/port-peche-muk6dkbe.webp",
+   "assets/img/port-diki-muk6q6yr.webp",
+   "assets/img/oued-marsa-muk6wn7p.webp",
+   "assets/img/oued-alian-muk6t40e.webp",
+   "assets/img/oued-alian-muk6rszm.webp",
+   "assets/img/ghojin-srama-muk6iyas.webp"
+  ],
+  "pos": "mc",
+  "size": "m",
+  "font": "sans"
+ },
+ "vault": {
+  "repo": "elhichoubilal/ksarsghir-photos"
+ },
+ "adsense": "ca-pub-8985281135812571"
+}
